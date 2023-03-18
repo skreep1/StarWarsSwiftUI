@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		4A72171F28AA4BF000E31061 /* StarWarsSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A72171E28AA4BF000E31061 /* StarWarsSwiftUIApp.swift */; };
-		4A72172128AA4BF000E31061 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A72172028AA4BF000E31061 /* ContentView.swift */; };
+		4A72172128AA4BF000E31061 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A72172028AA4BF000E31061 /* HomeView.swift */; };
 		4A72172328AA4BF100E31061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A72172228AA4BF100E31061 /* Assets.xcassets */; };
 		4A72172628AA4BF100E31061 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A72172528AA4BF100E31061 /* Preview Assets.xcassets */; };
+		4A72172E28AA5D5600E31061 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A72172D28AA5D5600E31061 /* HeaderView.swift */; };
+		4A72173228AA8CFB00E31061 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A72173128AA8CFB00E31061 /* Character.swift */; };
+		4A72173428AA8DB000E31061 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A72173328AA8DB000E31061 /* ApiManager.swift */; };
+		4A72173628AA9D4600E31061 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A72173528AA9D4600E31061 /* CharacterListView.swift */; };
+		4AAE644028ABB4FE0085A19A /* DetailCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE643F28ABB4FE0085A19A /* DetailCharacterView.swift */; };
+		4AAE644228AE697A0085A19A /* CharacterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE644128AE697A0085A19A /* CharacterRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A72171B28AA4BF000E31061 /* StarWarsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A72171E28AA4BF000E31061 /* StarWarsSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsSwiftUIApp.swift; sourceTree = "<group>"; };
-		4A72172028AA4BF000E31061 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4A72172028AA4BF000E31061 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4A72172228AA4BF100E31061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A72172528AA4BF100E31061 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4A72172D28AA5D5600E31061 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		4A72173128AA8CFB00E31061 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		4A72173328AA8DB000E31061 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		4A72173528AA9D4600E31061 /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		4AAE643F28ABB4FE0085A19A /* DetailCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCharacterView.swift; sourceTree = "<group>"; };
+		4AAE644128AE697A0085A19A /* CharacterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,10 @@
 		4A72171D28AA4BF000E31061 /* StarWarsSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				4AAE643E28ABB1B60085A19A /* View */,
+				4A72173028AA8CC200E31061 /* Networking */,
+				4A72172F28AA8CAE00E31061 /* Model */,
 				4A72171E28AA4BF000E31061 /* StarWarsSwiftUIApp.swift */,
-				4A72172028AA4BF000E31061 /* ContentView.swift */,
 				4A72172228AA4BF100E31061 /* Assets.xcassets */,
 				4A72172428AA4BF100E31061 /* Preview Content */,
 			);
@@ -65,6 +79,42 @@
 				4A72172528AA4BF100E31061 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4A72172C28AA5D2A00E31061 /* Componets */ = {
+			isa = PBXGroup;
+			children = (
+				4A72172D28AA5D5600E31061 /* HeaderView.swift */,
+				4A72173528AA9D4600E31061 /* CharacterListView.swift */,
+				4AAE644128AE697A0085A19A /* CharacterRow.swift */,
+			);
+			path = Componets;
+			sourceTree = "<group>";
+		};
+		4A72172F28AA8CAE00E31061 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A72173128AA8CFB00E31061 /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A72173028AA8CC200E31061 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4A72173328AA8DB000E31061 /* ApiManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4AAE643E28ABB1B60085A19A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A72172C28AA5D2A00E31061 /* Componets */,
+				4A72172028AA4BF000E31061 /* HomeView.swift */,
+				4AAE643F28ABB4FE0085A19A /* DetailCharacterView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A72172128AA4BF000E31061 /* ContentView.swift in Sources */,
+				4A72173628AA9D4600E31061 /* CharacterListView.swift in Sources */,
+				4AAE644028ABB4FE0085A19A /* DetailCharacterView.swift in Sources */,
+				4AAE644228AE697A0085A19A /* CharacterRow.swift in Sources */,
+				4A72172128AA4BF000E31061 /* HomeView.swift in Sources */,
+				4A72172E28AA5D5600E31061 /* HeaderView.swift in Sources */,
+				4A72173428AA8DB000E31061 /* ApiManager.swift in Sources */,
 				4A72171F28AA4BF000E31061 /* StarWarsSwiftUIApp.swift in Sources */,
+				4A72173228AA8CFB00E31061 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
